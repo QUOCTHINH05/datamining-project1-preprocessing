@@ -31,10 +31,10 @@ Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích abl
 
 #### Phần 1: Dữ liệu ảnh
 
-- **Tập dữ liệu**:
-- **Mô tả**:
-- **Kích thước**:
-- **Nguồn**:
+- **Tập dữ liệu**: CIFAR-10 (subset - data_batch_1)
+- **Mô tả**: Tập dữ liệu ảnh màu 32×32 pixels với 10 lớp đối tượng: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
+- **Kích thước**: 10.000 ảnh (từ data_batch_1), 10 lớp
+- **Nguồn**: https://www.cs.toronto.edu/~kriz/cifar.html
 
 #### Phần 2: Dữ liệu bảng
 
