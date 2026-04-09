@@ -9,10 +9,10 @@ pandas==3.0.1
 matplotlib==3.9.2
 seaborn==0.13.2
 
-# Machine Learning
+# Machine learning
 scikit-learn==1.8.0
 scipy==1.14.1
 
-# Image Processing
+# Image processing
 opencv-python==4.10.0.84
 Pillow==12.0.0
