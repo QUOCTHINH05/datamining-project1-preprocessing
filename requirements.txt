@@ -1,1 +1,18 @@
-#Version cụ thể của toàn bộ thư viện
+# Requirements
+# Install with: pip install -r requirements.txt
+
+# Core scientific computing
+numpy==2.1.1
+pandas==3.0.1
+
+# Visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Machine learning
+scikit-learn==1.8.0
+scipy==1.14.1
+
+# Image processing
+opencv-python==4.10.0.84
+Pillow==12.0.0

@@ -21,8 +21,8 @@ Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích abl
 | --- | -------------------- | -------- | ------------------------------------------------------------------------- |
 | 1   | Cao Tiến Thành       | 23120088 | Thực hiện EDA và tiền xử lý bảng                                          |
 | 2   | Đỗ Quốc Thịnh        | 23120089 | Thực hiện EDA và tiền xử lý bảng; soạn thảo PDF; kiểm tra chất lượng code |
-| 3   | Cao Thanh Bình       | 23120216 | Thực hiện tiền xử lý văn bản / Thực hiện tiền xử lý chuỗi thời gian       |
-| 4   | Nguyễn Văn Chiến     | 23120219 | Thực hiện tiền xử lý văn bản / Thực hiện tiền xử lý chuỗi thời gian       |
+| 3   | Cao Thanh Bình       | 23120216 | Thực hiện tiền xử lý chuỗi thời gian                                      |
+| 4   | Nguyễn Văn Chiến     | 23120219 |  Thực hiện tiền xử lý chuỗi thời gian                                     |
 | 5   | Đặng Nguyễn Thái Đạt | 23120227 | Thực hiện EDA và tiền xử lý ảnh                                           |
 
 ---
@@ -31,10 +31,10 @@ Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích abl
 
 #### Phần 1: Dữ liệu ảnh
 
-- **Tập dữ liệu**:
-- **Mô tả**:
-- **Kích thước**:
-- **Nguồn**:
+- **Tập dữ liệu**: CIFAR-10 (subset - data_batch_1)
+- **Mô tả**: Tập dữ liệu ảnh màu 32×32 pixels với 10 lớp đối tượng: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck
+- **Kích thước**: 10.000 ảnh (từ data_batch_1), 10 lớp
+- **Nguồn**: https://www.cs.toronto.edu/~kriz/cifar.html
 
 #### Phần 2: Dữ liệu bảng
 
@@ -120,7 +120,7 @@ Group_05/
 | Phần 1: Tiền xử lý ảnh                                      | Đặng Nguyễn Thái Đạt | Resize, không gian màu, chuẩn hóa, augmentation                                   |
 | Phần 2: EDA bảng                                            | X                    | Kiểm định phân phối, tương quan, phân tích dữ liệu thiếu                          |
 | Phần 2: Tiền xử lý bảng                                     | X                    | Điền khuyết, phát hiện ngoại lai, chuẩn hóa, mã hóa, chọn và giảm chiều đặc trưng |
-| Phần 3 / 4: Tiền xử lý văn bản / Tiền xử lý chuỗi thời gian | X                    | X                                                                                 |
+| Phần 4: Tiền xử lý chuỗi thời gian                          | Cao Thanh Bình       | X                                                                                 |
 | Viết báo cáo                                                | Đỗ Quốc Thịnh        | Tổng hợp báo cáo PDF                                                              |
 | Review code                                                 | X                    | Kiểm tra chất lượng và tài liệu                                                   |
 
