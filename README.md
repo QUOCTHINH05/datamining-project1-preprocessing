@@ -8,8 +8,7 @@ Dự án này thực hiện các kỹ thuật tiền xử lý dữ liệu toàn 
 
 - **Phần 1**: Tiền xử lý dữ liệu ảnh
 - **Phần 2**: Tiền xử lý dữ liệu bảng
-- **Phần 3**: Tiền xử lý dữ liệu văn bản (tùy chọn)
-- **Phần 4**: Tiền xử lý dữ liệu chuỗi thời gian (tùy chọn)
+- **Phần 4**: Tiền xử lý dữ liệu chuỗi thời gian
 
 Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích ablation và kiểm định thống kê để củng cố lập luận.
 
@@ -20,9 +19,9 @@ Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích abl
 | STT | Họ tên               | MSSV     | Vai trò                                                                   |
 | --- | -------------------- | -------- | ------------------------------------------------------------------------- |
 | 1   | Cao Tiến Thành       | 23120088 | Thực hiện EDA và tiền xử lý bảng                                          |
-| 2   | Đỗ Quốc Thịnh        | 23120089 | Thực hiện EDA và tiền xử lý bảng; soạn thảo PDF; kiểm tra chất lượng code |
+| 2   | Đỗ Quốc Thịnh        | 23120089 | Thực hiện tiền xử lý bảng; soạn thảo PDF; kiểm tra chất lượng code |
 | 3   | Cao Thanh Bình       | 23120216 | Thực hiện tiền xử lý chuỗi thời gian                                      |
-| 4   | Nguyễn Văn Chiến     | 23120219 |  Thực hiện tiền xử lý chuỗi thời gian                                     |
+| 4   | Nguyễn Văn Chiến     | 23120219 | Thực hiện tiền xử lý chuỗi thời gian                                     |
 | 5   | Đặng Nguyễn Thái Đạt | 23120227 | Thực hiện EDA và tiền xử lý ảnh                                           |
 
 ---
@@ -38,19 +37,13 @@ Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích abl
 
 #### Phần 2: Dữ liệu bảng
 
-- **Tập dữ liệu**:
-- **Mô tả**:
-- **Kích thước**:
-- **Nguồn**:
+- **Tập dữ liệu**: Adult Income Dataset (Census Income Dataset)
+- **Mô tả**:Tập dữ liệu dạng bảng với 15 thuộc tính gồm có 6 thuộc tính số (age, fnlwgt, education-num, capital-gain, capital-loss, hour-per-week) và 8 thuộc tính phân loại (workclass, education, marital-status, occupation, relationship, race, sex, native-country), và 1 biến mục tiêu là income (>50k, <=50k). Yêu cầu thường gặp là phân loại thu nhập của một người có vượt qua 50.000$ 1 năm hay không dựa trên các đặc trưng đầu vào.
+- **Kích thước**: 48842 dòng với 14 đặc trưng và 1 đặc trưng phân loại (income)
+- **Missing value**: Tập dữ liệu có missing value trên thuộc tính ``workclass`` với 5.73%, ``occupation`` với 5.75% và ``native-country`` với 1.75%.
+- **Nguồn**: [UCI-AdultIncome](https://archive.ics.uci.edu/dataset/2/adult)
 
-#### Phần 3: Dữ liệu văn bản (nếu chọn)
-
-- **Tập dữ liệu**:
-- **Mô tả**:
-- **Kích thước**:
-- **Nguồn**:
-
-#### Phần 4: Dữ liệu chuỗi thời gian (nếu chọn)
+#### Phần 4: Dữ liệu chuỗi thời gian
 
 - **Tập dữ liệu**:
 - **Mô tả**:
@@ -66,17 +59,24 @@ Group_05/
 |-- README.md                    # File này (Tổng quan, hướng dẫn chạy, link tài nguyên)
 |-- requirements.txt             # Version cụ thể của toàn bộ thư viện
 |-- data/
-|   |-- raw/                     # Dữ liệu gốc (hoặc link Google Drive)
-|   |-- processed/               # Dữ liệu sau tiền xử lý
+|     |-- image-data/
+|     |       |-- raw/            # Dữ liệu gốc
+|     |       |-- processed/      # Dữ liệu sau tiền xử lý
+|     |-- tabular-data/
+|     |       |-- raw/           
+|     |       |-- processed/
+|     |-- temporal-data/
+|            |-- raw/         
+|            |-- processed/
 |-- notebooks/
-|   |-- 01_EDA_image.ipynb       # Phân tích thống kê ảnh
-|   |-- 02_preprocessing_image.ipynb  # Tiền xử lý ảnh
-|   |-- 03_EDA_tabular.ipynb     # Phân tích thống kê bảng
-|   |-- 04_preprocessing_tabular.ipynb # Tiền xử lý bảng
-|   |-- 05_text_preprocessing.ipynb    # Tiền xử lý văn bản (Phần 3)
-|   |-- 06_temporal_preprocessing.ipynb # Tiền xử lý chuỗi thời gian (Phần 4)
+|   |-- 01_EDA_image.ipynb                  # Phân tích thống kê ảnh
+|   |-- 02_preprocessing_image.ipynb        # Tiền xử lý ảnh
+|   |-- 03_EDA_tabular.ipynb                # Phân tích thống kê bảng
+|   |-- 04_preprocessing_tabular.ipynb      # Tiền xử lý bảng
+|   |-- 06_temporal_preprocessing.ipynb     # Tiền xử lý chuỗi thời gian 
 |-- docs/
     |-- Report.pdf               # Báo cáo PDF
+    |-- Report.txt               # Chứa đường dẫn đến trang Overleaf soạn thảo Latex cho Report.pdf
 ```
 
 ---
@@ -107,7 +107,6 @@ Group_05/
    
    - Phần 1: `01_EDA_image.ipynb` → `02_preprocessing_image.ipynb`
    - Phần 2: `03_EDA_tabular.ipynb` → `04_preprocessing_tabular.ipynb`
-   - Phần 3: `05_text_preprocessing.ipynb`
    - Phần 4: `06_temporal_preprocessing.ipynb`
 
 ---
@@ -118,11 +117,12 @@ Group_05/
 | ----------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------- |
 | Phần 1: EDA ảnh                                             | Đặng Nguyễn Thái Đạt | Phân tích thống kê, mất cân bằng lớp, pHash                                       |
 | Phần 1: Tiền xử lý ảnh                                      | Đặng Nguyễn Thái Đạt | Resize, không gian màu, chuẩn hóa, augmentation                                   |
-| Phần 2: EDA bảng                                            | X                    | Kiểm định phân phối, tương quan, phân tích dữ liệu thiếu                          |
-| Phần 2: Tiền xử lý bảng                                     | X                    | Điền khuyết, phát hiện ngoại lai, chuẩn hóa, mã hóa, chọn và giảm chiều đặc trưng |
+| Phần 2: EDA bảng                                            | Cao Tiến Thành        | Kiểm định phân phối, tương quan, phân tích dữ liệu thiếu             |
+| Phần 2: Tiền xử lý bảng                                     | Đỗ Quốc Thịnh            | Xử lý giá trị thiếu bằng điền khuyết, phát hiện ngoại lai, chuẩn hóa có kiểm định, mã hóa biến phân loại |
+| Phần 2: Tiền xử lý bảng                                     | Cao Tiến Thành            | Lựa chọn và giảm chiều đặc trưng, phát hiện xử lý mất cân bằng lớp |
 | Phần 4: Tiền xử lý chuỗi thời gian                          | Cao Thanh Bình       | X                                                                                 |
-| Viết báo cáo                                                | Đỗ Quốc Thịnh        | Tổng hợp báo cáo PDF                                                              |
-| Review code                                                 | X                    | Kiểm tra chất lượng và tài liệu                                                   |
+| Viết báo cáo                                                | Cả 4 bạn        | Tổng hợp báo cáo PDF                                                              |
+| Review code                                                 | Đỗ Quốc Thịnh, Cao Tiến Thành                    | Kiểm tra chất lượng và tài liệu                                                   |
 
 ---
 
