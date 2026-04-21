@@ -45,10 +45,11 @@ Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích abl
 
 #### Phần 4: Dữ liệu chuỗi thời gian
 
-- **Tập dữ liệu**:
-- **Mô tả**:
-- **Kích thước**:
-- **Nguồn**:
+- **Tập dữ liệu**: Stock Market Data (NASDAQ, NYSE, S&P500)
+- **Mô tả**:Dữ liệu là chuỗi thời gian giá cổ phiếu (Stock Market OHLCV) ghi nhận biến động giao dịch theo ngày của một mã cổ phiếu trên thị trường chứng khoán.
+Bao gồm các thuộc tính: Open, High, Low, Close, Adjusted Close và Volume. Dữ liệu phản ánh biến động giá và khối lượng giao dịch theo thời gian.
+- **Kích thước**: 4197 dòng với dữ liệu từ 2006-04-12 đến 2022-12-12, tần suất giao dịch cao theo ngày.
+- **Nguồn**:https://www.kaggle.com/datasets/paultimothymooney/stock-market-data
 
 ---
 
