@@ -16,13 +16,13 @@ Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích abl
 
 ### Thành viên nhóm
 
-| STT | Họ tên               | MSSV     | Vai trò                                                                   |
-| --- | -------------------- | -------- | ------------------------------------------------------------------------- |
-| 1   | Cao Tiến Thành       | 23120088 | Thực hiện EDA và tiền xử lý bảng                                          |
+| STT | Họ tên               | MSSV     | Vai trò                                                            |
+| --- | -------------------- | -------- | ------------------------------------------------------------------ |
+| 1   | Cao Tiến Thành       | 23120088 | Thực hiện EDA và tiền xử lý bảng                                   |
 | 2   | Đỗ Quốc Thịnh        | 23120089 | Thực hiện tiền xử lý bảng; soạn thảo PDF; kiểm tra chất lượng code |
-| 3   | Cao Thanh Bình       | 23120216 | Thực hiện tiền xử lý chuỗi thời gian                                      |
-| 4   | Nguyễn Văn Chiến     | 23120219 | Thực hiện tiền xử lý chuỗi thời gian                                     |
-| 5   | Đặng Nguyễn Thái Đạt | 23120227 | Thực hiện EDA và tiền xử lý ảnh                                           |
+| 3   | Cao Thanh Bình       | 23120216 | Thực hiện tiền xử lý chuỗi thời gian                               |
+| 4   | Nguyễn Văn Chiến     | 23120219 | Thực hiện tiền xử lý chuỗi thời gian                               |
+| 5   | Đặng Nguyễn Thái Đạt | 23120227 | Thực hiện EDA và tiền xử lý ảnh                                    |
 
 ---
 
@@ -38,7 +38,7 @@ Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích abl
 #### Phần 2: Dữ liệu bảng
 
 - **Tập dữ liệu**: Adult Income Dataset (Census Income Dataset)
-- **Mô tả**:Tập dữ liệu dạng bảng với 15 thuộc tính gồm có 6 thuộc tính số (age, fnlwgt, education-num, capital-gain, capital-loss, hour-per-week) và 8 thuộc tính phân loại (workclass, education, marital-status, occupation, relationship, race, sex, native-country), và 1 biến mục tiêu là income (>50k, <=50k). Yêu cầu thường gặp là phân loại thu nhập của một người có vượt qua 50.000$ 1 năm hay không dựa trên các đặc trưng đầu vào.
+- **Mô tả**: Tập dữ liệu dạng bảng với 15 thuộc tính gồm có 6 thuộc tính số (age, fnlwgt, education-num, capital-gain, capital-loss, hour-per-week) và 8 thuộc tính phân loại (workclass, education, marital-status, occupation, relationship, race, sex, native-country), và 1 biến mục tiêu là income (>50k, <=50k). Yêu cầu thường gặp là phân loại thu nhập của một người có vượt qua 50.000$ 1 năm hay không dựa trên các đặc trưng đầu vào.
 - **Kích thước**: 48842 dòng với 14 đặc trưng và 1 đặc trưng phân loại (income)
 - **Missing value**: Tập dữ liệu có missing value trên thuộc tính ``workclass`` với 5.73%, ``occupation`` với 5.75% và ``native-country`` với 1.75%.
 - **Nguồn**: [UCI-AdultIncome](https://archive.ics.uci.edu/dataset/2/adult)
@@ -46,10 +46,10 @@ Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích abl
 #### Phần 4: Dữ liệu chuỗi thời gian
 
 - **Tập dữ liệu**: Stock Market Data (NASDAQ, NYSE, S&P500)
-- **Mô tả**:Dữ liệu là chuỗi thời gian giá cổ phiếu (Stock Market OHLCV) ghi nhận biến động giao dịch theo ngày của một mã cổ phiếu trên thị trường chứng khoán.
-Bao gồm các thuộc tính: Open, High, Low, Close, Adjusted Close và Volume. Dữ liệu phản ánh biến động giá và khối lượng giao dịch theo thời gian.
+- **Mô tả**: Dữ liệu là chuỗi thời gian giá cổ phiếu (Stock Market OHLCV) ghi nhận biến động giao dịch theo ngày của một mã cổ phiếu trên thị trường chứng khoán.
+  Bao gồm các thuộc tính: Open, High, Low, Close, Adjusted Close và Volume. Dữ liệu phản ánh biến động giá và khối lượng giao dịch theo thời gian.
 - **Kích thước**: 4197 dòng với dữ liệu từ 2006-04-12 đến 2022-12-12, tần suất giao dịch cao theo ngày.
-- **Nguồn**:https://www.kaggle.com/datasets/paultimothymooney/stock-market-data
+- **Nguồn**: https://www.kaggle.com/datasets/paultimothymooney/stock-market-data
 
 ---
 
@@ -114,25 +114,39 @@ Group_05/
 
 ### Phân công công việc
 
-| Công việc                                                   | Thành viên           | Mô tả                                                                             |
-| ----------------------------------------------------------- | -------------------- | --------------------------------------------------------------------------------- |
-| Phần 1: EDA ảnh                                             | Đặng Nguyễn Thái Đạt | Phân tích thống kê, mất cân bằng lớp, pHash                                       |
-| Phần 1: Tiền xử lý ảnh                                      | Đặng Nguyễn Thái Đạt | Resize, không gian màu, chuẩn hóa, augmentation                                   |
-| Phần 2: EDA bảng                                            | Cao Tiến Thành        | Kiểm định phân phối, tương quan, phân tích dữ liệu thiếu             |
-| Phần 2: Tiền xử lý bảng                                     | Đỗ Quốc Thịnh            | Xử lý giá trị thiếu bằng điền khuyết, phát hiện ngoại lai, chuẩn hóa có kiểm định, mã hóa biến phân loại |
-| Phần 2: Tiền xử lý bảng                                     | Cao Tiến Thành            | Lựa chọn và giảm chiều đặc trưng, phát hiện xử lý mất cân bằng lớp |
-| Phần 4: Tiền xử lý chuỗi thời gian                          | Cao Thanh Bình       | Phân tích ban đầu trước khi tiền xử lý, Kiểm định tính dừng, Trích xuất đặc trưng thời gian, Xây dựng ma trận đặc trưng cho dự báo.                                                                                 |
-| Phần 4: Tiền xử lý chuỗi thời gian                          | Nguyễn Văn Chiến       | Xử lý khoảng trống và nội suy so sánh, Phân rã chuỗi thời gian,Phát hiện dị thường trong chuỗi thời gian, [Nâng cao] Phân tích nhân quả Granger (Granger Causality).                                                                                 |
-| Viết báo cáo                                                | Cả 4 bạn        | Tổng hợp báo cáo PDF                                                              |
-| Review code                                                 | Đỗ Quốc Thịnh, Cao Tiến Thành                    | Kiểm tra chất lượng và tài liệu                                                   |
+| Công việc                          | Thành viên                    | Mô tả                                                                                                                                                                |
+| ---------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Phần 1: EDA ảnh                    | Đặng Nguyễn Thái Đạt          | Phân tích thống kê, mất cân bằng lớp, pHash                                                                                                                          |
+| Phần 1: Tiền xử lý ảnh             | Đặng Nguyễn Thái Đạt          | Resize, không gian màu, chuẩn hóa, augmentation                                                                                                                      |
+| Phần 2: EDA bảng                   | Cao Tiến Thành                | Kiểm định phân phối, tương quan, phân tích dữ liệu thiếu                                                                                                             |
+| Phần 2: Tiền xử lý bảng            | Đỗ Quốc Thịnh                 | Xử lý giá trị thiếu bằng điền khuyết, phát hiện ngoại lai, chuẩn hóa có kiểm định, mã hóa biến phân loại                                                             |
+| Phần 2: Tiền xử lý bảng            | Cao Tiến Thành                | Lựa chọn và giảm chiều đặc trưng, phát hiện xử lý mất cân bằng lớp                                                                                                   |
+| Phần 4: Tiền xử lý chuỗi thời gian | Cao Thanh Bình                | Phân tích ban đầu trước khi tiền xử lý, Kiểm định tính dừng, Trích xuất đặc trưng thời gian, Xây dựng ma trận đặc trưng cho dự báo.                                  |
+| Phần 4: Tiền xử lý chuỗi thời gian | Nguyễn Văn Chiến              | Xử lý khoảng trống và nội suy so sánh, Phân rã chuỗi thời gian,Phát hiện dị thường trong chuỗi thời gian, [Nâng cao] Phân tích nhân quả Granger (Granger Causality). |
+| Viết báo cáo                       | Cả 4 bạn                      | Tổng hợp báo cáo PDF                                                                                                                                                 |
+| Review code                        | Đỗ Quốc Thịnh, Cao Tiến Thành | Kiểm tra chất lượng và tài liệu                                                                                                                                      |
 
 ---
 
 ### Tài nguyên ngoài
 
-- **Link dữ liệu**:
-- **Tài liệu tham khảo**:
-- **Tài liệu hướng dẫn**:
+**Link dữ liệu:**
+
+- CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html
+
+**Tài liệu tham khảo:**
+
+- Krizhevsky, A., and Hinton, G. (2009). Learning Multiple Layers of Features from Tiny Images.
+- Wang, Z., Bovik, A. C., Sheikh, H. R., and Simoncelli, E. P. (2004). Image Quality Assessment: From Error Visibility to Structural Similarity. IEEE TIP, 13(4), 600-612.
+- Bradski, G. (2000). The OpenCV Library. Dr. Dobb's Journal of Software Tools.
+- Bishop, C. M. (2006). Pattern Recognition and Machine Learning. Springer.
+- scikit-learn: https://scikit-learn.org
+- pHash: https://phash.org
+
+**Tài liệu hướng dẫn:**
+
+- OpenCV Python Tutorial: https://docs.opencv.org/4.8.0/
+- scikit-learn Image Processing: https://scikit-learn.org/stable/auto_examples/
 
 ---
 
