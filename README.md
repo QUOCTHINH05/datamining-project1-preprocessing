@@ -45,10 +45,11 @@ Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích abl
 
 #### Phần 4: Dữ liệu chuỗi thời gian
 
-- **Tập dữ liệu**:
-- **Mô tả**:
-- **Kích thước**:
-- **Nguồn**:
+- **Tập dữ liệu**: Dữ liệu lịch sử giá cổ phiếu mã VNDA. 
+- **Mô tả**: Đây là tập dữ liệu dạng chuỗi thời gian (Time-series data), ghi nhận biến
+động giá cổ phiếu theo từng ngày giao dịch trên thị trường chứng khoán
+- **Kích thước**: 4197 dòng, với 7 thuộc tính( Date, open, close, hight, low,  Adjusted Close, Volume).
+- **Nguồn**:[Stock Market Data](https://www.kaggle.com/datasets/paultimothymooney/stock-market-data)
 
 ---
 
