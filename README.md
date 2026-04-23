@@ -45,11 +45,11 @@ Mỗi phần bao gồm cài đặt kỹ thuật tiền xử lý, phân tích abl
 
 #### Phần 4: Dữ liệu chuỗi thời gian
 
-- **Tập dữ liệu**: Stock Market Data (NASDAQ, NYSE, S&P500)
-- **Mô tả**: Dữ liệu là chuỗi thời gian giá cổ phiếu (Stock Market OHLCV) ghi nhận biến động giao dịch theo ngày của một mã cổ phiếu trên thị trường chứng khoán.
-  Bao gồm các thuộc tính: Open, High, Low, Close, Adjusted Close và Volume. Dữ liệu phản ánh biến động giá và khối lượng giao dịch theo thời gian.
-- **Kích thước**: 4197 dòng với dữ liệu từ 2006-04-12 đến 2022-12-12, tần suất giao dịch cao theo ngày.
-- **Nguồn**: https://www.kaggle.com/datasets/paultimothymooney/stock-market-data
+- **Tập dữ liệu**: Dữ liệu lịch sử giá cổ phiếu mã VNDA. 
+- **Mô tả**: Đây là tập dữ liệu dạng chuỗi thời gian (Time-series data), ghi nhận biến
+động giá cổ phiếu theo từng ngày giao dịch trên thị trường chứng khoán
+- **Kích thước**: 4197 dòng, với 7 thuộc tính( Date, open, close, hight, low,  Adjusted Close, Volume).
+- **Nguồn**:[Stock Market Data](https://www.kaggle.com/datasets/paultimothymooney/stock-market-data)
 
 ---
 
@@ -114,6 +114,7 @@ Group_05/
 
 ### Phân công công việc
 
+
 | Công việc                          | Thành viên                    | Mô tả                                                                                                                                                                |
 | ---------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Phần 1: EDA ảnh                    | Đặng Nguyễn Thái Đạt          | Phân tích thống kê, mất cân bằng lớp, pHash                                                                                                                          |
@@ -122,10 +123,9 @@ Group_05/
 | Phần 2: Tiền xử lý bảng            | Đỗ Quốc Thịnh                 | Xử lý giá trị thiếu bằng điền khuyết, phát hiện ngoại lai, chuẩn hóa có kiểm định, mã hóa biến phân loại                                                             |
 | Phần 2: Tiền xử lý bảng            | Cao Tiến Thành                | Lựa chọn và giảm chiều đặc trưng, phát hiện xử lý mất cân bằng lớp                                                                                                   |
 | Phần 4: Tiền xử lý chuỗi thời gian | Cao Thanh Bình                | Phân tích ban đầu trước khi tiền xử lý, kiểm định tính dừng, trích xuất đặc trưng thời gian, xây dựng ma trận đặc trưng cho dự báo.                                  |
-| Phần 4: Tiền xử lý chuỗi thời gian | Nguyễn Văn Chiến              | Xử lý khoảng trống và nội suy so sánh, phân rã chuỗi thời gian, phát hiện dị thường trong chuỗi thời gian,phân tích nhân quả Granger (Granger Causality)[NC] |
+| Phần 4: Tiền xử lý chuỗi thời gian | Nguyễn Văn Chiến              | Xử lý khoảng trống và nội suy so sánh, phân rã chuỗi thời gian, phát hiện dị thường trong chuỗi thời gian, phân tích nhân quả Granger (Granger Causality)[NC] |
 | Viết báo cáo                       | Cả 4 bạn                      | Tổng hợp báo cáo PDF                                                                                                                                                 |
 | Review code                        | Đỗ Quốc Thịnh, Cao Tiến Thành | Kiểm tra chất lượng và tài liệu                                                                                                                                      |
-
 ---
 
 ### Tài nguyên ngoài
