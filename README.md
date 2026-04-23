@@ -121,7 +121,7 @@ Group_05/
 | Phần 2: EDA bảng                                            | Cao Tiến Thành        | Kiểm định phân phối, tương quan, phân tích dữ liệu thiếu             |
 | Phần 2: Tiền xử lý bảng                                     | Đỗ Quốc Thịnh            | Xử lý giá trị thiếu bằng điền khuyết, phát hiện ngoại lai, chuẩn hóa có kiểm định, mã hóa biến phân loại |
 | Phần 2: Tiền xử lý bảng                                     | Cao Tiến Thành            | Lựa chọn và giảm chiều đặc trưng, phát hiện xử lý mất cân bằng lớp |
-| Phần 4: Tiền xử lý chuỗi thời gian                          | Cao Thanh Bình       | X                                                                                 |
+| Phần 4: Tiền xử lý chuỗi thời gian                          | Cao Thanh Bình       | Phân tích chuỗi thời gian (EDA), kiểm định tính dừng (ADF, KPSS), trích xuất đặc trưng (rolling mean) |
 | Viết báo cáo                                                | Cả 4 bạn        | Tổng hợp báo cáo PDF                                                              |
 | Review code                                                 | Đỗ Quốc Thịnh, Cao Tiến Thành                    | Kiểm tra chất lượng và tài liệu                                                   |
 
